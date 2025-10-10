@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Instagram, Cloud, Mail, Phone, MessageCircle } from 'lucide-react'
+import { Github, Linkedin, Twitter, Cloud, Mail, Phone } from 'lucide-react'
 import { SocialLink } from '@/types'
 
 const socialLinks: SocialLink[] = [
@@ -16,9 +16,9 @@ const socialLinks: SocialLink[] = [
     icon: 'linkedin'
   },
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/cristiano.filho98/',
-    icon: 'instagram'
+    name: 'X (Twitter)',
+    url: 'https://x.com/crisfilho98',
+    icon: 'twitter'
   },
   {
     name: 'Salesforce Trailblazer',
@@ -33,8 +33,8 @@ const getIcon = (iconName: string) => {
       return <Github className="w-6 h-6" />
     case 'linkedin':
       return <Linkedin className="w-6 h-6" />
-    case 'instagram':
-      return <Instagram className="w-6 h-6" />
+    case 'twitter':
+      return <Twitter className="w-6 h-6" />
     case 'cloud':
       return <Cloud className="w-6 h-6" />
     default:
@@ -71,23 +71,25 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Vamos Conversar!</h3>
               <p className="text-gray-400 mb-8">
-                Deixe-me mostrar o potencial digital que sua empresa tem com um site único! 
-                Estou sempre aberto para discutir novos projetos e oportunidades.
+                Estou sempre aberto para discutir novos projetos e oportunidades. 
+                Conecte-se comigo através das redes sociais profissionais.
               </p>
             </div>
 
             {/* Contact Details */}
             <div className="space-y-4">
               <a
-                href="mailto:cristianoliveira01.co@gmail.com"
+                href="https://www.linkedin.com/in/cristiano-filho/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors group"
               >
                 <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-500 transition-colors">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-400 text-sm">cristianoliveira01.co@gmail.com</p>
+                  <p className="text-white font-medium">LinkedIn</p>
+                  <p className="text-gray-400 text-sm">Conectar profissionalmente</p>
                 </div>
               </a>
 
@@ -141,34 +143,36 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-semibold text-white mb-6">Pronto para Começar?</h3>
             <p className="text-gray-400 mb-8">
-              Entre em contato através do WhatsApp para uma conversa rápida e personalizada sobre seu projeto.
+              Conecte-se comigo através do LinkedIn para discussões profissionais sobre projetos e oportunidades.
             </p>
 
             <div className="space-y-4">
               <a
-                href="https://api.whatsapp.com/send?phone=5571983973644&text=Oi%20tudo%20bem,%20vim%20pelo%20seu%20site.%20Gostaria%20de%20fazer%20um%20orçamento!"
+                href="https://www.linkedin.com/in/cristiano-filho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full btn-primary flex items-center justify-center gap-2 text-lg py-4"
               >
-                <MessageCircle className="w-5 h-5" />
-                Fale comigo no WhatsApp
+                <Linkedin className="w-5 h-5" />
+                Fale comigo no LinkedIn
               </a>
 
               <a
-                href="mailto:cristianoliveira01.co@gmail.com"
+                href="https://x.com/crisfilho98"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full btn-secondary flex items-center justify-center gap-2 text-lg py-4"
               >
-                <Mail className="w-5 h-5" />
-                Enviar Email
+                <Twitter className="w-5 h-5" />
+                Seguir no X
               </a>
             </div>
 
             <div className="mt-8 p-4 bg-blue-600/10 border border-blue-600/20 rounded-lg">
-              <h4 className="text-blue-400 font-semibold mb-2">Resposta Rápida</h4>
+              <h4 className="text-blue-400 font-semibold mb-2">Resposta Profissional</h4>
               <p className="text-gray-300 text-sm">
-                Geralmente respondo em até 2 horas durante horário comercial. 
-                Para projetos urgentes, use o WhatsApp.
+                Respondo mensagens profissionais no LinkedIn em até 24 horas. 
+                Para discussões técnicas, use o GitHub ou Trailhead.
               </p>
             </div>
           </motion.div>

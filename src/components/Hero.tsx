@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Mail, Phone } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -97,21 +97,23 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="https://api.whatsapp.com/send?phone=5571983973644&text=Oi%20tudo%20bem,%20vim%20pelo%20seu%20site.%20Gostaria%20de%20fazer%20um%20orçamento!"
+                href="https://www.linkedin.com/in/cristiano-filho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4" />
-                Fale comigo agora!
+                <ExternalLink className="w-4 h-4" />
+                Conectar no LinkedIn
               </a>
               
               <a
-                href="mailto:cristianoliveira01.co@gmail.com"
+                href="https://x.com/crisfilho98"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-secondary flex items-center justify-center gap-2"
               >
-                <Mail className="w-4 h-4" />
-                Enviar Email
+                <ExternalLink className="w-4 h-4" />
+                Seguir no X
               </a>
             </motion.div>
 
@@ -123,9 +125,9 @@ export default function Hero() {
               className="mt-8 space-y-2 text-gray-400"
             >
               <p>📍 Salvador, Bahia, Brasil</p>
-              <p>📧 cristianoliveira01.co@gmail.com</p>
-              <p>📱 +55 (71) 98397-3644</p>
               <p>🌐 https://cristianofilho.github.io/</p>
+              <p>💼 https://www.linkedin.com/in/cristiano-filho/</p>
+              <p>🐦 https://x.com/crisfilho98</p>
             </motion.div>
           </motion.div>
         </div>
