@@ -5,6 +5,7 @@ export interface Experience {
   period: string;
   description: string;
   technologies: string[];
+  website?: string;
 }
 
 export interface Skill {

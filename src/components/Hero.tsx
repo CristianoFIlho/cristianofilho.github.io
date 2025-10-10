@@ -64,15 +64,36 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="text-gray-300 text-lg mb-8 max-w-2xl"
             >
-              Bacharel em Engenharia de Software especializado em desenvolvimento Salesforce e integrações 
-              MuleSoft, com 3 anos de experiência em implementações B2B. Atuo na criação de soluções 
-              personalizadas nas plataformas Sales Cloud e Service Cloud.
+              Bacharel em Engenharia de Software pela Universidade Católica de Salvador. Consultor na Capgemini 
+              com 3+ anos de experiência em Salesforce Sales Cloud, Service Cloud e MuleSoft. Especialista em 
+              LWC, Apex, integrações B2B e automação de processos para grandes empresas como Bradesco, Volkswagen e Enel.
             </motion.p>
 
+            {/* Quick Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
+              className="grid grid-cols-3 gap-4 mb-8"
+            >
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-400">3+</div>
+                <div className="text-sm text-gray-400">Anos Exp.</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-green-400">5+</div>
+                <div className="text-sm text-gray-400">Projetos</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-purple-400">C2</div>
+                <div className="text-sm text-gray-400">Inglês</div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
@@ -98,11 +119,13 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
+              transition={{ duration: 0.8, delay: 1.4 }}
               className="mt-8 space-y-2 text-gray-400"
             >
+              <p>📍 Salvador, Bahia, Brasil</p>
               <p>📧 cristianoliveira01.co@gmail.com</p>
-              <p>📱 +55 71 98397-3644</p>
+              <p>📱 +55 (71) 98397-3644</p>
+              <p>🌐 https://cristianofilho.github.io/</p>
             </motion.div>
           </motion.div>
         </div>

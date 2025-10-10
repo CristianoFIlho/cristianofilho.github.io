@@ -10,17 +10,23 @@ const Navigation = () => {
   const sections = [
     { id: 'hero', name: 'Início', icon: '🏠' },
     { id: 'achievements', name: 'Conquistas', icon: '🏆' },
+    { id: 'certifications', name: 'Certificações', icon: '🎓' },
+    { id: 'education', name: 'Formação', icon: '📚' },
     { id: 'experience', name: 'Experiência', icon: '💼' },
     { id: 'skills', name: 'Habilidades', icon: '⚡' },
     { id: 'projects', name: 'Projetos', icon: '🚀' },
+    { id: 'github-projects', name: 'GitHub', icon: '💻' },
+    { id: 'languages', name: 'Idiomas', icon: '🌍' },
     { id: 'contact', name: 'Contato', icon: '📧' },
   ]
 
   useEffect(() => {
+    let scrollTimeout: NodeJS.Timeout
+    
     const handleScroll = () => {
       setIsScrolling(true)
-      clearTimeout(window.scrollTimeout)
-      window.scrollTimeout = setTimeout(() => setIsScrolling(false), 150)
+      clearTimeout(scrollTimeout)
+      scrollTimeout = setTimeout(() => setIsScrolling(false), 150)
 
       const scrollPosition = window.scrollY + 100
 
@@ -37,7 +43,10 @@ const Navigation = () => {
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      clearTimeout(scrollTimeout)
+    }
   }, [])
 
   const scrollToSection = (sectionId: string) => {
@@ -123,11 +132,15 @@ const Navigation = () => {
             transformOrigin: 'left',
           }}
           animate={{
-            scaleX: activeSection === 'hero' ? 0.16 : 
-                   activeSection === 'achievements' ? 0.33 :
+            scaleX: activeSection === 'hero' ? 0.1 : 
+                   activeSection === 'achievements' ? 0.2 :
+                   activeSection === 'certifications' ? 0.3 :
+                   activeSection === 'education' ? 0.4 :
                    activeSection === 'experience' ? 0.5 :
-                   activeSection === 'skills' ? 0.66 :
-                   activeSection === 'projects' ? 0.83 : 1
+                   activeSection === 'skills' ? 0.6 :
+                   activeSection === 'projects' ? 0.7 :
+                   activeSection === 'github-projects' ? 0.8 :
+                   activeSection === 'languages' ? 0.9 : 1
           }}
           transition={{ duration: 0.3 }}
         />
