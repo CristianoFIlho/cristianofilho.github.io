@@ -7,20 +7,54 @@ import { Project as ProjectType } from '@/types'
 
 const projects: ProjectType[] = [
   {
-    id: 'math-pow',
-    title: 'Math.Pow',
-    description: 'Calculadora científica avançada com interface moderna e funcionalidades completas para cálculos matemáticos complexos.',
-    image: '/images/math-pow-project.png',
-    url: 'https://mathpow.vercel.app/',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel']
+    id: 'simulados-salesforce',
+    title: 'Simulados Salesforce',
+    description: 'Plataforma completa de preparação para certificações Salesforce e MuleSoft. Sistema moderno com Next.js, API REST, autenticação JWT, analytics integrado e mais de 1000 questões validadas.',
+    image: '/images/simulados-project.png',
+    url: 'https://projeto-simulados-salesforce.vercel.app/',
+    githubUrl: 'https://github.com/CristianoFIlho/projeto-simulados-salesforce.vercel.app',
+    technologies: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'JWT', 'Tailwind CSS', 'Vercel'],
+    features: ['1000+ Questões', 'Analytics', 'Dark Mode', 'PWA', 'API REST']
   },
   {
-    id: 'portfolio',
-    title: 'Portfolio Website',
-    description: 'Site pessoal moderno e responsivo desenvolvido com Next.js e Tailwind CSS, seguindo as melhores práticas de SEO e performance.',
-    image: '/images/cristiano-filho.jpg',
-    url: 'https://cristianofilho.github.io',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion']
+    id: 'lokvan',
+    title: 'Lokvan - Sistema de Turismo',
+    description: 'Sistema completo de gestão de turismo desenvolvido com Next.js. Plataforma moderna para agências de viagem com funcionalidades de reservas, pagamentos e gestão de clientes.',
+    image: '/images/lokvan-project.png',
+    url: 'https://lokvan.net.br/',
+    githubUrl: 'https://github.com/CristianoFIlho/lokvan.net.br',
+    technologies: ['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+    features: ['Reservas Online', 'Pagamentos', 'Dashboard', 'Multi-idioma', 'Responsivo']
+  },
+  {
+    id: 'of-projetos',
+    title: 'OF Projetos - Portfolio Empresarial',
+    description: 'Site institucional moderno para empresa de desenvolvimento. Portfolio corporativo com design profissional, seções de serviços, projetos e contato integrado.',
+    image: '/images/OFprojeto-project.png',
+    url: 'https://ofprojetos.com.br/',
+    githubUrl: 'https://github.com/OF-Projetos/ofprojetos.com.br',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
+    features: ['Design Moderno', 'Animações', 'SEO Otimizado', 'Performance', 'Responsivo']
+  },
+  {
+    id: 'sf-seattracker',
+    title: 'SF SeatTracker - Cinema',
+    description: 'Sistema de gestão de assentos para cinemas desenvolvido em Salesforce. Aplicação nativa com Apex, Lightning Web Components e integração com sistemas de pagamento.',
+    image: '/images/sfseattracker-project.png',
+    url: 'https://github.com/CristianoFIlho/SF-SeatTracker',
+    githubUrl: 'https://github.com/CristianoFIlho/SF-SeatTracker',
+    technologies: ['Salesforce', 'Apex', 'LWC', 'SOQL', 'Lightning', 'JavaScript'],
+    features: ['Gestão de Assentos', 'Reservas', 'Relatórios', 'Integração', 'Mobile']
+  },
+  {
+    id: 'math-pow',
+    title: 'Math.Pow - Calculadora Científica',
+    description: 'Calculadora científica avançada com interface moderna. Aplicação educacional para matemática com funcionalidades completas de cálculos complexos e histórico de operações.',
+    image: '/images/math-pow-project.png',
+    url: 'https://mathpow.vercel.app/',
+    githubUrl: 'https://github.com/CristianoFIlho/mathpow.vercel.app',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Math.js', 'Vercel'],
+    features: ['Cálculos Complexos', 'Histórico', 'Interface Moderna', 'Educacional', 'PWA']
   }
 ]
 
@@ -41,17 +75,17 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group"
             >
-              <div className="card overflow-hidden hover:border-blue-500/50 transition-all duration-300">
+              <div className="card overflow-hidden hover:border-blue-500/50 transition-all duration-300 h-full">
                 {/* Project Image */}
                 <div className="relative h-48 mb-6 overflow-hidden rounded-lg">
                   <Image
@@ -69,22 +103,26 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                      title="Ver Projeto"
                     >
                       <ExternalLink className="w-4 h-4 text-white" />
                     </a>
-                    <a
-                      href="https://github.com/CristianoFIlho"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
-                    >
-                      <Github className="w-4 h-4 text-white" />
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                        title="Ver Código"
+                      >
+                        <Github className="w-4 h-4 text-white" />
+                      </a>
+                    )}
                   </div>
                 </div>
 
                 {/* Project Content */}
-                <div className="space-y-4">
+                <div className="space-y-4 flex-1 flex flex-col">
                   <div className="flex items-center gap-2">
                     <Code className="w-5 h-5 text-blue-400" />
                     <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
@@ -92,9 +130,23 @@ export default function Projects() {
                     </h3>
                   </div>
                   
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed flex-1">
                     {project.description}
                   </p>
+                  
+                  {/* Features */}
+                  {project.features && (
+                    <div className="flex flex-wrap gap-1 mb-4">
+                      {project.features.map((feature) => (
+                        <span
+                          key={feature}
+                          className="px-2 py-1 bg-blue-600/20 text-blue-300 rounded text-xs border border-blue-500/30"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2">
@@ -109,25 +161,27 @@ export default function Projects() {
                   </div>
                   
                   {/* Project Links */}
-                  <div className="flex gap-4 pt-4">
+                  <div className="flex gap-4 pt-4 mt-auto">
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-primary flex items-center gap-2"
+                      className="btn-primary flex items-center gap-2 flex-1 justify-center"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Ver Projeto
                     </a>
-                    <a
-                      href="https://github.com/CristianoFIlho"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-secondary flex items-center gap-2"
-                    >
-                      <Github className="w-4 h-4" />
-                      Código
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-secondary flex items-center gap-2 flex-1 justify-center"
+                      >
+                        <Github className="w-4 h-4" />
+                        Código
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -143,14 +197,14 @@ export default function Projects() {
           viewport={{ once: true }}
           className="mt-20"
         >
-          <h3 className="text-2xl font-bold text-center mb-12 text-gradient">Serviços Oferecidos</h3>
+          <h3 className="text-2xl font-bold text-center mb-12 text-gradient">Especialidades Técnicas</h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: '💻', title: 'Criação de Sites', description: 'Sites modernos e responsivos' },
-              { icon: '🔍', title: 'Otimizações SEO', description: 'Melhore seu ranking no Google' },
-              { icon: '🤖', title: 'ChatBots Personalizados', description: 'Automatize o atendimento' },
-              { icon: '🛠️', title: 'Suporte e Manutenção', description: 'Manutenção contínua dos sistemas' }
+              { icon: '☁️', title: 'Salesforce Development', description: 'Apex, LWC, Flow, Triggers' },
+              { icon: '🔗', title: 'MuleSoft Integration', description: 'APIs, DataWeave, Anypoint' },
+              { icon: '💻', title: 'Full Stack Development', description: 'Next.js, TypeScript, Node.js' },
+              { icon: '🎨', title: 'UI/UX Design', description: 'Modern interfaces, responsive design' }
             ].map((service, index) => (
               <motion.div
                 key={service.title}

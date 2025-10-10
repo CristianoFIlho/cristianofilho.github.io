@@ -8,7 +8,7 @@ const Certifications = () => {
     {
       title: "Salesforce Data Cloud Specialist",
       issuer: "Salesforce",
-      year: "2024",
+      year: "2025",
       description: "Certificação especializada em Salesforce Data Cloud para gerenciamento e análise de dados unificados",
       badge: "☁️",
       color: "from-cyan-500 to-cyan-600"
@@ -24,26 +24,10 @@ const Certifications = () => {
     {
       title: "Salesforce Certified Platform Developer I",
       issuer: "Salesforce",
-      year: "2024",
+      year: "2025",
       description: "Certificação em desenvolvimento de aplicações na plataforma Salesforce usando Apex e Lightning Web Components",
       badge: "🏆",
       color: "from-blue-500 to-blue-600"
-    },
-    {
-      title: "MuleSoft Certified Developer - Level 1",
-      issuer: "MuleSoft",
-      year: "2024", 
-      description: "Certificação em desenvolvimento de integrações usando MuleSoft Anypoint Platform e DataWeave",
-      badge: "🔗",
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      title: "Salesforce Certified Administrator",
-      issuer: "Salesforce",
-      year: "2023",
-      description: "Certificação em administração e configuração de orgs Salesforce",
-      badge: "⚙️",
-      color: "from-orange-500 to-orange-600"
     }
   ]
 

@@ -21,7 +21,9 @@ export interface Project {
   description: string;
   image: string;
   url: string;
+  githubUrl?: string;
   technologies: string[];
+  features?: string[];
 }
 
 export interface Achievement {

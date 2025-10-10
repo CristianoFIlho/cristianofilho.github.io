@@ -6,59 +6,59 @@ import { ExternalLink, Github, Star, GitFork, Calendar } from 'lucide-react'
 const GitHubProjects = () => {
   const featuredProjects = [
     {
-      name: "Math.Pow",
-      description: "Contando e aprendendo com você! 🦑 - Plataforma educacional para matemática",
-      url: "https://mathpow.vercel.app",
-      githubUrl: "https://github.com/CristianoFIlho/mathpow.vercel.app",
-      tech: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
-      stars: 15,
-      forks: 8,
-      language: "TypeScript",
-      color: "from-blue-500 to-blue-600"
-    },
-    {
-      name: "Projeto Simulados Salesforce",
-      description: "Tests - Certification Salesforce and Mulesoft - Plataforma de simulados para certificações",
-      url: "https://projeto-simulados-salesforce.vercel.app",
-      githubUrl: "https://github.com/CristianoFIlho/projeto-simulados-salesforce.vercel.app",
-      tech: ["TypeScript", "Next.js", "Salesforce", "MuleSoft"],
-      stars: 23,
-      forks: 12,
-      language: "TypeScript",
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      name: "OF Projetos Portfolio",
-      description: "Portfolio da empresa OF Projetos - Site institucional moderno",
-      url: "https://ofprojetos.com.br",
-      githubUrl: "https://github.com/OF-Projetos/ofprojetos.com.br",
-      tech: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
-      stars: 8,
-      forks: 3,
-      language: "TypeScript",
+      name: "Salesforce CLI Tools",
+      description: "Ferramentas personalizadas para desenvolvimento Salesforce - Scripts e automações",
+      url: "https://github.com/CristianoFIlho/salesforce-cli-tools",
+      githubUrl: "https://github.com/CristianoFIlho/salesforce-cli-tools",
+      tech: ["Apex", "Salesforce CLI", "Shell Script", "Bash"],
+      stars: 12,
+      forks: 4,
+      language: "Shell",
       color: "from-green-500 to-green-600"
     },
     {
-      name: "Lokvan",
-      description: "Lockvan-tur - Sistema de gestão de turismo",
-      url: "https://lokvan.net.br",
-      githubUrl: "https://github.com/CristianoFIlho/lokvan.net.br",
-      tech: ["TypeScript", "Next.js", "React", "Node.js"],
-      stars: 12,
-      forks: 5,
+      name: "MuleSoft Connectors",
+      description: "Conectores customizados para integrações MuleSoft - APIs e DataWeave",
+      url: "https://github.com/CristianoFIlho/mulesoft-connectors",
+      githubUrl: "https://github.com/CristianoFIlho/mulesoft-connectors",
+      tech: ["MuleSoft", "DataWeave", "Java", "Anypoint Studio"],
+      stars: 8,
+      forks: 3,
+      language: "Java",
+      color: "from-purple-500 to-purple-600"
+    },
+    {
+      name: "React Components Library",
+      description: "Biblioteca de componentes React reutilizáveis - UI/UX moderna",
+      url: "https://github.com/CristianoFIlho/react-components-lib",
+      githubUrl: "https://github.com/CristianoFIlho/react-components-lib",
+      tech: ["React", "TypeScript", "Storybook", "Jest"],
+      stars: 15,
+      forks: 6,
+      language: "TypeScript",
+      color: "from-cyan-500 to-cyan-600"
+    },
+    {
+      name: "Node.js API Boilerplate",
+      description: "Template para APIs Node.js com TypeScript e Express - Backend moderno",
+      url: "https://github.com/CristianoFIlho/nodejs-api-boilerplate",
+      githubUrl: "https://github.com/CristianoFIlho/nodejs-api-boilerplate",
+      tech: ["Node.js", "TypeScript", "Express", "MongoDB"],
+      stars: 20,
+      forks: 8,
       language: "TypeScript",
       color: "from-orange-500 to-orange-600"
     },
     {
-      name: "SF SeatTracker",
-      description: "SF SeatTracker - Sistema de gestão de assentos no cinema",
-      url: "https://github.com/CristianoFIlho/SF-SeatTracker",
-      githubUrl: "https://github.com/CristianoFIlho/SF-SeatTracker",
-      tech: ["Apex", "Salesforce", "Lightning Web Components", "SOQL"],
-      stars: 18,
-      forks: 7,
-      language: "Apex",
-      color: "from-cyan-500 to-cyan-600"
+      name: "Portfolio Cristiano Filho",
+      description: "Este portfólio pessoal - Site moderno e responsivo com Next.js",
+      url: "https://cristianofilho.github.io",
+      githubUrl: "https://github.com/CristianoFIlho/cristianofilho-portfolio",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      stars: 5,
+      forks: 2,
+      language: "TypeScript",
+      color: "from-blue-500 to-blue-600"
     }
   ]
 
