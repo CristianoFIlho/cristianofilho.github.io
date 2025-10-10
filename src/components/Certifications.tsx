@@ -14,14 +14,6 @@ const Certifications = () => {
       color: "from-cyan-500 to-cyan-600"
     },
     {
-      title: "EF SET English Certificate",
-      issuer: "EF SET",
-      year: "2024",
-      description: "Certificado de proficiência em inglês - C2 Proficient (74/100) - Nível mais alto de proficiência",
-      badge: "🌍",
-      color: "from-green-500 to-green-600"
-    },
-    {
       title: "Salesforce Certified Platform Developer I",
       issuer: "Salesforce",
       year: "2025",

@@ -66,7 +66,7 @@ export default function Hero() {
             >
               Bacharel em Engenharia de Software pela Universidade Católica de Salvador. Consultor na Capgemini 
               com 3+ anos de experiência em Salesforce Sales Cloud, Service Cloud e MuleSoft. Especialista em 
-              LWC, Apex, integrações B2B e automação de processos para grandes empresas como Bradesco, Volkswagen e Enel.
+              LWC, Apex, integrações B2B e automação de processos. Inglês técnico para documentação e reuniões internacionais.
             </motion.p>
 
             {/* Quick Stats */}
@@ -85,7 +85,7 @@ export default function Hero() {
                 <div className="text-sm text-gray-400">Projetos</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-400">C2</div>
+                <div className="text-2xl font-bold text-purple-400">Técnico</div>
                 <div className="text-sm text-gray-400">Inglês</div>
               </div>
             </motion.div>

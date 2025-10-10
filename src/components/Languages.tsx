@@ -15,12 +15,12 @@ const Languages = () => {
     },
     {
       name: "Inglês", 
-      level: "C2 Proficient",
-      proficiency: 74,
-      description: "EF SET Certificate 74/100 - Nível mais alto de proficiência. Capacidade de compreender e se expressar com precisão e fluência",
+      level: "Técnico",
+      proficiency: 70,
+      description: "Inglês técnico para desenvolvimento e documentação. Capacidade de ler documentação técnica, participar de reuniões técnicas e comunicar-se em contextos profissionais de TI",
       flag: "🇺🇸",
       color: "from-blue-500 to-blue-600",
-      certificate: "EF SET English Certificate"
+      certificate: "Limited Working Proficiency"
     },
     {
       name: "Espanhol",
