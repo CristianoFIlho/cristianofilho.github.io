@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Filho - Redirecionando...</title>
+    <meta name="description" content="Portfolio de Cristiano Filho - Consultor de Soluções Digitais">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cristianofilho.github.io/">
+    <meta property="og:title" content="Cristiano Filho - Consultor de Soluções Digitais">
+    <meta property="og:description"
+        content="Bacharel em Engenharia de Software pela Universidade Católica de Salvador. Consultor na Capgemini com 3+ anos de experiência em Salesforce Sales Cloud, Service Cloud e MuleSoft.">
+    <meta property="og:image" content="https://cristianofilho.github.io/public/images/cristiano-filho.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cristianofilho.github.io/">
+    <meta property="twitter:title" content="Cristiano Filho - Consultor de Soluções Digitais">
+    <meta property="twitter:description"
+        content="Bacharel em Engenharia de Software pela Universidade Católica de Salvador. Consultor na Capgemini com 3+ anos de experiência em Salesforce Sales Cloud, Service Cloud e MuleSoft.">
+    <meta property="twitter:image" content="https://cristianofilho.github.io/public/images/cristiano-filho.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicon/site.webmanifest">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .cloud-icon {
+            font-size: 2rem;
+            margin-left: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 1rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .redirect-text {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .manual-link {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .manual-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            Cris<span class="cloud-icon">☁️</span>
+        </div>
+
+        <h1>Cristiano Filho</h1>
+        <p class="subtitle">Consultor de Soluções Digitais II</p>
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <div class="redirect-text">Redirecionando para o portfolio...</div>
+        </div>
+
+        <a href="https://crisfilho.vercel.app/" class="manual-link">
+            Clique aqui se não for redirecionado automaticamente
+        </a>
+
+        <div class="footer">
+            <p>© 2024 Cristiano Filho. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        // Redirecionamento automático após 2 segundos
+        setTimeout(function () {
+            window.location.href = 'https://crisfilho.vercel.app/';
+        }, 2000);
+
+        // Redirecionamento imediato se JavaScript estiver habilitado
+        // (fallback para casos onde o setTimeout não funciona)
+        window.location.replace('https://crisfilho.vercel.app/');
+    </script>
+
+    <!-- Meta refresh como fallback para navegadores sem JavaScript -->
+    <noscript>
+        <meta http-equiv="refresh" content="2;url=https://crisfilho.vercel.app/">
+    </noscript>
+</body>
+
+</html>
