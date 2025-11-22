@@ -1,33 +1,26 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
+
+const sections = [
+  { id: 'hero', name: 'Início', icon: '🏠' },
+  { id: 'achievements', name: 'Conquistas', icon: '🏆' },
+  { id: 'certifications', name: 'Certificações', icon: '🎓' },
+  { id: 'education', name: 'Formação', icon: '📚' },
+  { id: 'experience', name: 'Experiência', icon: '💼' },
+  { id: 'skills', name: 'Habilidades', icon: '⚡' },
+  { id: 'projects', name: 'Projetos', icon: '🚀' },
+  { id: 'github-projects', name: 'GitHub', icon: '💻' },
+  { id: 'languages', name: 'Idiomas', icon: '🌍' },
+  { id: 'contact', name: 'Contato', icon: '📧' },
+]
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero')
-  const [isScrolling, setIsScrolling] = useState(false)
-
-  const sections = [
-    { id: 'hero', name: 'Início', icon: '🏠' },
-    { id: 'achievements', name: 'Conquistas', icon: '🏆' },
-    { id: 'certifications', name: 'Certificações', icon: '🎓' },
-    { id: 'education', name: 'Formação', icon: '📚' },
-    { id: 'experience', name: 'Experiência', icon: '💼' },
-    { id: 'skills', name: 'Habilidades', icon: '⚡' },
-    { id: 'projects', name: 'Projetos', icon: '🚀' },
-    { id: 'github-projects', name: 'GitHub', icon: '💻' },
-    { id: 'languages', name: 'Idiomas', icon: '🌍' },
-    { id: 'contact', name: 'Contato', icon: '📧' },
-  ]
 
   useEffect(() => {
-    let scrollTimeout: NodeJS.Timeout
-    
     const handleScroll = () => {
-      setIsScrolling(true)
-      clearTimeout(scrollTimeout)
-      scrollTimeout = setTimeout(() => setIsScrolling(false), 150)
-
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -45,7 +38,6 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      clearTimeout(scrollTimeout)
     }
   }, [])
 
