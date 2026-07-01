@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   keywords: 'Salesforce, MuleSoft, Engenharia de Software, Desenvolvimento, Consultoria, B2B',
   authors: [{ name: 'Cristiano Filho' }],
   creator: 'Cristiano Filho',
+  metadataBase: new URL('https://cristianofilho.github.io'),
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
